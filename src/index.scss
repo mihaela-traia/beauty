@@ -8,6 +8,31 @@ $secondary: #cc8084;
 $body-color: #513b3c;
 $headings-color: #320003;
 
+.raleway-h1 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 3.75em;
+  font-weight: 700;
+  font-style: normal;
+  color: #320003;
+}
+.raleway-body {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 1em;
+  font-style: normal;
+  color: #513b3c !important;
+}
+.raleway-button {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 1em;
+  font-style: normal;
+  color: #fffefe !important;
+  text-decoration: none;
+}
 .bg-transparent {
   background: linear-gradient(
     180deg,
@@ -16,6 +41,28 @@ $headings-color: #320003;
     rgba(252, 244, 245, 1) 66%,
     rgba(255, 255, 255, 0) 100%
   );
+}
+.home {
+  min-height: 83vh;
+  background-color: #faeff0;
+  h1,
+  p {
+    padding-bottom: 3.2vh;
+  }
+  .landing-img {
+    max-height: 600px;
+    min-height: 270px;
+    width: 95%;
+    border-radius: 20px;
+  }
+  .shop-button {
+    border-radius: 10px;
+    background-color: #cc8084;
+    padding: 16px 32px 16px 32px;
+  }
+  .container {
+    padding-bottom: 8%;
+  }
 }
 footer a {
   text-decoration: none !important;
@@ -40,8 +87,14 @@ footer a {
       order: 3 !important;
     }
   }
+  .home {
+    .branding {
+      padding-top: 10% !important;
+    }
+  }
 }
-
+@media (min-width: 768px) {
+}
 @media (min-width: 576px) {
   nav.navbar > .container,
   .navbar > .container-fluid,
@@ -66,6 +119,12 @@ footer a {
     }
     #navbarNavAltMarkup {
       order: 4;
+    }
+  }
+  .home {
+    .branding {
+      padding-top: 6vh;
+      padding-bottom: 9vh;
     }
   }
 }
@@ -98,6 +157,27 @@ footer a {
     }
     .navbar-brand img {
       height: 40px !important;
+    }
+  }
+  .home {
+    .branding {
+      padding-top: 6vh;
+      padding-bottom: 9vh;
+      h1 {
+        font-size: 2rem;
+        padding-bottom: 2vh;
+      }
+      p,
+      a {
+        font-size: 0.9rem;
+        padding-bottom: 2vh;
+      }
+    }
+
+    .landing-img {
+      max-height: 600px;
+      min-height: 270px;
+      border-radius: 20px;
     }
   }
   footer {
