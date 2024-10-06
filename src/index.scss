@@ -16,6 +16,14 @@ $headings-color: #320003;
   font-style: normal;
   color: #320003;
 }
+.raleway-h2 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 2.625em;
+  font-weight: 700;
+  font-style: normal;
+  color: #320003;
+}
 .raleway-body {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -44,6 +52,8 @@ $headings-color: #320003;
 }
 .home {
   min-height: 83vh;
+  margin-top: -80px;
+  border-top: solid 80px #faeff0;
   background-color: #faeff0;
   h1,
   p {
@@ -61,7 +71,19 @@ $headings-color: #320003;
     padding: 16px 32px 16px 32px;
   }
   .container {
-    padding-bottom: 8%;
+    padding-bottom: 5%;
+  }
+}
+.error {
+  padding-top: 5%;
+  min-height: 60vh;
+  ul {
+    list-style: circle;
+    padding-left: 35%;
+  }
+  .material-symbols-outlined {
+    color: #320003;
+    font-size: 70px;
   }
 }
 footer a {

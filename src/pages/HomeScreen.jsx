@@ -7,8 +7,8 @@ import LandingMask from "../assets/mask.png";
 
 function Home() {
   return (
-    <section className="home">
-      <Layout>
+    <Layout>
+      <section className="home">
         <Container>
           <Row>
             <Col lg={4} xs={12} px={1} className="branding">
@@ -34,8 +34,8 @@ function Home() {
             </Col>
           </Row>
         </Container>
-      </Layout>
-    </section>
+      </section>
+    </Layout>
   );
 }
 export default Home;
