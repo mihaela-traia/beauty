@@ -17,6 +17,17 @@ $headings-color: #320003;
     rgba(255, 255, 255, 0) 100%
   );
 }
+footer a {
+  text-decoration: none !important;
+  color: #513b3c !important;
+  &:hover {
+    color: #b49990;
+  }
+  &:active,
+  &.active {
+    color: #8f6b63;
+  }
+}
 @media (min-width: 992px) {
   nav {
     #logo {
@@ -89,3 +100,26 @@ $headings-color: #320003;
       height: 40px !important;
     }
   }
+  footer {
+    font-size: 0.8rem !important;
+    h5 {
+      font-size: 0.8rem !important;
+    }
+    p {
+      display: none;
+    }
+    img {
+      height: 80px !important;
+      width: auto;
+      display: block;
+      margin: 0 auto 0 auto;
+    }
+    .socials {
+      display: flex;
+      justify-content: center;
+      img {
+        height: 24px !important;
+      }
+    }
+  }
+}
