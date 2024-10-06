@@ -1,0 +1,31 @@
+.raleway-menu {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.125em;
+  font-weight: 500;
+  font-style: normal;
+}
+.navbar {
+  .nav-link {
+    color: #320003;
+
+    &:hover {
+      color: #ff9999;
+    }
+  }
+  .material-symbols-outlined {
+    color: #320003;
+  }
+  button {
+    border: 0;
+  }
+}
+.navbar {
+  .nav-link {
+    &:active,
+    &.active {
+      border-bottom: solid px #cc8084;
+      border-radius: 10px;
+    }
+  }
+}
